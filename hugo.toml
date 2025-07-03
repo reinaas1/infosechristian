@@ -12,17 +12,17 @@ enableEmoji = true
 ignoreErrors = ["additional-script-loading-error"] # ignore error of loading additional scripts.
 
 # traditional way: theme component resides in directory 'themes'
-theme = "hugo-blog-awesome"
+# theme = "hugo-blog-awesome"
 
 # modern way: pull in theme component as hugo module
-#[module]
+[module]
   # Uncomment the next line to build and serve using local theme clone declared in the named Hugo workspace:
   # workspace = "hugo-blog-awesome.work"
   #[module.hugoVersion]
     #extended = true
     #min = "0.87.0"
-  #[[module.imports]]
-    #path = "github.com/hugo-sid/hugo-blog-awesome"
+  [[module.imports]]
+    path = "github.com/hugo-sid/hugo-blog-awesome"
     #disable = false
 
 [services]
@@ -51,7 +51,7 @@ theme = "hugo-blog-awesome"
 [Languages.en-gb]
   languageName = "English"
   languageCode = "en-gb"
-  contentDir = "content/en"
+  contentDir = "content/"
   weight = 1
 
   [Languages.en-gb.menu]
@@ -74,14 +74,14 @@ theme = "hugo-blog-awesome"
     weight = 30
 
 [Languages.en-gb.params]
-  sitename = "Awesome hugo blog"
-  defaultColor = "dark" # set color mode: dark, light, auto
+  sitename = "Infosechristian"
+  defaultColor = "auto" # set color mode: dark, light, auto
   # Setting it to 'auto' applies the color scheme based on the visitor's device color preference.If you don't specify anything, ignore this parameter, or leave it blank,
   # the default value is set to 'auto'.
   # You can take a look at layouts/index.html for more information.
   description = "Minimal Hugo blog theme with light and dark mode support"
   mainSections = ['posts']
-  toc = true # set to false to disable table of contents 'globally'
+  toc = false # set to false to disable table of contents 'globally'
   tocOpen = false # set to true to open table of contents by default
   goToTop = true # set to false to disable 'go to top' button
   additionalScripts = ['js/custom.js', 'js/custom-2.js']
@@ -99,9 +99,9 @@ theme = "hugo-blog-awesome"
 [Languages.en-gb.params.author]
   avatar = "avatar.jpg" # put the file in assets folder; also ensure that image has same height and width
   # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
-  intro = "Awesome hugo blog"
-  name = "Sidharth R"
-  description = "A fast, minimalistic Hugo theme with light and dark mode support, for running a personal site or blog."
+  intro = "My Cybersecurity Journey"
+  name = "Christian R. Aasen"
+  description = "Welcome to my personal website and blog. Here, I share personal projects and interests related to cybersecurity, bug bounty hunting, CTFs and programming."
 
 # Allow to override webmanifest options
 [Languages.en-gb.params.webmanifest]
@@ -120,12 +120,12 @@ theme = "hugo-blog-awesome"
 
 [[params.socialIcons]]
 name = "github"
-url = "https://github.com/hugo-sid"
+url = "https://github.com/reinaas1"
 
 [[params.socialIcons]]
-name = "twitter"
-url = "https://twitter.com"
+name = "linkedin"
+url = "https://www.linkedin.com/in/christian-rein%C3%A5s-aasen-84860a278/"
 
 [[params.socialIcons]]
-name = "Rss"
-url = "/index.xml"
+name = "discord"
+url = ""
