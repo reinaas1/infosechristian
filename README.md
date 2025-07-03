@@ -1,3 +1,3 @@
 # Infosechristian
 
-## My first blog
+## More details regarding the website coming soon
